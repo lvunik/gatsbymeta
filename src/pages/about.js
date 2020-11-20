@@ -4,13 +4,17 @@ import { Helmet } from "react-helmet"
 
 const About = () => {
   return (
-    <div>
-      <Helmet>
-        <title>About</title>
-      </Helmet>
-      <Link to="/">Home</Link>
-      <h1>Dog</h1>
-    </div>
+    <Helmet>
+      <title>About</title>
+      <meta property="og:title" content="About - Appiwat" />
+      <meta property="og:type" content="article" />
+      <meta
+        property="og:image"
+        content="https://openthread.google.cn/images/ot-contrib-google.png"
+      />
+      <meta property="og:description" content="Best It Solution" />
+      <meta property="og:url" content="https://www.appiwat.com/" />
+    </Helmet>
   )
 }
 
